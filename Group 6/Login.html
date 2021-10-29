@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" type="text/css" href="css/Login.css"/>
+    <link href="picture/image.png" rel="icon" type="image/x-ico"/>
+</head>
+<body background="picture/background.jpeg" onLoad="scrollTo(1000,0)">
+    <script type="text/javascript">
+        window.alert("welcome!")
+        alert("此页面有三个彩蛋哦！")
+    </script>
+
+    <script type="text/javascript">
+        window.onload=function(){
+            var textElt=document.getElementById("text")
+
+            textElt.onkeydown=function(event){
+                if(event.keyCode==13){
+                    alert("这可能是一个比较难发现的小彩蛋")
+                }
+            }
+        }
+    </script>
+    
+    <div class="logo_box">
+        <a href="egg2.html" target="_blank" style="cursor: default;"> <img class="logo_img" src="picture/logo.png" onclick="alert('彩蛋+1')"></a>
+    </div>
+	<div class="login_box">
+		<h1 class="title">欢迎登录</h1>
+		<input class="input_box" id="text" type="text" value="Group 6" readonly/>
+		<input class="input_box" type="password" value="11081108" title="11081108" disabled/>
+		<a href="Group.html"><input class="button_box" type="button" value="登录" onclick="alert('登录成功！')"></a>
+	</div>
+    <div class="egg" title="恭喜你发现了一个彩蛋" >
+        <a href="egg.html" target="_blank"><img src="picture/doge.png" onclick="alert('彩蛋+1')"></a>
+    </div>
+</body>
+
+
+</html>
